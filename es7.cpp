@@ -107,6 +107,8 @@ int main() {
         queue->size = size;
 
         // Da inserire qui l'interazione con l'utente
+    
+        free(queue->array);
     }
 
     free(queue);
