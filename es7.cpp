@@ -8,7 +8,7 @@ struct CircularQueue {
     int count;
 };
 
-int* allocaArray(int n) {
+int* allocateArray(int n) {
     int* ptr = (int*) calloc(n, sizeof(int));
 
     return ptr;
@@ -103,7 +103,7 @@ int main() {
     std::cin>>size;
 
     if (size > 1) {
-        queue->array = allocaArray(size);
+        queue->array = allocateArray(size);
         queue->size = size;
 
         // Da inserire qui l'interazione con l'utente
