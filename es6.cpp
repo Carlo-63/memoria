@@ -71,6 +71,7 @@ int main() {
     if (x > 0 && y > 0 && z > 0) {
         int*** mat = allocaMatrice3D(x, y, z);
 
+        // Riempie la matrice 3D e i vari layer con numeri casuali da 0 a 9
         for (int i = 0; i < z; i++) {
             for (int j = 0; j < x; j++) {
                 for (int k = 0; k < y; k++) {
