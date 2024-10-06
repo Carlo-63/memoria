@@ -95,14 +95,14 @@ int main() {
     CircularQueue* queue = (CircularQueue*) malloc(sizeof(CircularQueue));
     int size;
 
-    queue->front = 0;
-    queue->rear = 0;
-    queue->count = 0;
 
     std::cout<<"Size: ";
     std::cin>>size;
 
     if (size > 1) {
+        queue->front = 0;
+        queue->rear = 0;
+        queue->count = 0;
         queue->array = allocateArray(size);
         queue->size = size;
 

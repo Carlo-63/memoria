@@ -68,3 +68,22 @@ Implementa una coda circolare utilizzando un array dinamico. Fornisci le funzion
 - Comprendere la gestione delle code tramite array circolari.
 
 ---
+
+### Esercizio 8: Implementazione di uno Stack (Pila) Dinamico
+
+#### Requisiti
+
+1. **Struttura Dati Stack**:
+   - Lo stack deve essere implementato usando una struttura che contiene un puntatore dinamico all'array che memorizza gli elementi.
+   - Deve contenere anche variabili per la **capacità** (numero massimo di elementi che può contenere), la **dimensione corrente** (numero di elementi attualmente presenti), e un **puntatore all'elemento in cima**.
+
+2. **Funzioni Richieste**:
+   - `push(int n)`: Inserisce un elemento in cima allo stack. Se lo stack è pieno, la capacità deve essere raddoppiata.
+   - `pop()`: Rimuove l'elemento in cima allo stack e ne restituisce il valore. Se lo stack è vuoto, deve segnalare un errore.
+   - `peek()`: Restituisce l'elemento in cima allo stack senza rimuoverlo.
+   - `isEmpty()`: Verifica se lo stack è vuoto.
+   - `printStack()`: Stampa tutti gli elementi presenti nello stack.
+
+3. **Gestione della Memoria**:
+   - Lo stack deve gestire dinamicamente l'allocazione e il ridimensionamento della memoria per ospitare gli elementi aggiunti.
+   - Utilizzare `realloc` per ridimensionare l'array quando necessario.
