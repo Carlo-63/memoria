@@ -75,7 +75,7 @@ void printQueue(CircularQueue* queue) {
         int count = queue->count;
 
         for (int j = 0; j < count; j++) {
-            std::cout << queue->array[i] << " ";
+            std::cout<<queue->array[i]<<" ";
             
             if (i != queue->size -1) {
                 i++;
@@ -84,10 +84,10 @@ void printQueue(CircularQueue* queue) {
                 i = 0;
             }
         }
-        std::cout << "\n";
+        std::cout<<"\n";
     }
     else {
-        std::cout << "The queue is empty." << std::endl;
+        std::cout<<"The queue is empty."<<std::endl;
     }
 }   
 
